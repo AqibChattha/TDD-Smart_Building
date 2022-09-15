@@ -8,5 +8,6 @@ namespace SmartBuilding
 {
     interface IFireAlarmManager
     {
+        bool SetAlarm(bool isActive);
     }
 }

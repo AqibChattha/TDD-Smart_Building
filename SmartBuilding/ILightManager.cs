@@ -8,5 +8,7 @@ namespace SmartBuilding
 {
     interface ILightManager
     {
+        bool SetLight(bool isOn, int lightID);
+        bool SetAllLights(bool isOn);
     }
 }

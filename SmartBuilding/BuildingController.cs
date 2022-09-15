@@ -16,9 +16,31 @@ namespace SmartBuilding
             this.buildingId = id;
         }
 
-        public BuildingController()
+        public string GetCurrentState()
         {
-            
+            return CurrentState;
+        }
+
+        public bool SetCurrentState(string state)
+        {
+            CurrentState = state;
+            return true;
+        }
+
+        public string GetBuildingID()
+        {
+            return buildingId;
+        }
+
+        public bool SetBuildingID(string id)
+        {
+            buildingId = id;
+            return true;
+        }
+
+        public string GetStatusReport()
+        {
+            return null;
         }
     }
 }
