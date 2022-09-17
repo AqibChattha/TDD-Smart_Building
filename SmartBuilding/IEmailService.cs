@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartBuilding
 {
-    interface IEmailService
+    public interface IEmailService
     {
         void SendMail(string emailAddress, string subject, string message);
     }

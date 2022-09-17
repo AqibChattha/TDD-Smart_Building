@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartBuilding
 {
-    abstract class Manager
+    public abstract class Manager
     {
         private bool engineerRequired;
 
@@ -14,16 +14,23 @@ namespace SmartBuilding
         {
 
         }
-
-        public string GetStatus()
+        
+        public virtual string GetStatus()
         {
-            return null;
+            return "Status";
         }
 
         public bool SetEngineerRequired(bool needsEngineer)
         {
-            engineerRequired = needsEngineer;
-            return true;
+            if (engineerRequired != needsEngineer)
+            {
+                engineerRequired = needsEngineer;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

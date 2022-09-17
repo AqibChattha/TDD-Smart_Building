@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartBuilding
 {
-    interface IWebService
+    public interface IWebService
     {
         void LogStateChange(string logDetails);
         void LogEngineerRequired(string logDetails);

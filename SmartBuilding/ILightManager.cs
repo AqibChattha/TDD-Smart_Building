@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmartBuilding
 {
-    interface ILightManager
+    public interface ILightManager
     {
-        bool SetLight(bool isOn, int lightID);
-        bool SetAllLights(bool isOn);
+        void SetLight(bool isOn, int lightID);
+        void SetAllLights(bool isOn);
     }
 }
