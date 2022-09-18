@@ -15,7 +15,6 @@ namespace SmartBuilding
         public Form1()
         {
             InitializeComponent();
-            MessageBox.Show(new BuildingController("build1", "open1").ToString());
         }
     }
 }
